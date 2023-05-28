@@ -1,0 +1,25 @@
+.titulo {
+    text-align: center;
+
+    &__principalIndex {
+        font-size: 8rem;
+        font-weight: lighter;
+        letter-spacing: -0.4rem;
+        font-family: map-get($fuentes, secundario);
+    }
+
+    &__secundarioIndex {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+        position: relative;
+        top: -2rem;
+        font-weight: lighter;
+    }
+
+    &__tituloDePaginas {
+        font-size: 4.5rem;
+        font-weight: lighter;
+        font-family: map-get($fuentes, secundario);
+    }
+
+}

@@ -1,0 +1,24 @@
+.navbar {
+
+    .logoNavBar {
+        height: 2rem;
+    }
+
+    .botonesNavegacion {
+        justify-content: end;
+    }
+
+    a:hover {
+        transform: scale(120%);
+    }
+
+    .tamanioTexto {
+        font-size: 1.5rem;
+    }
+
+
+    .colorTexto,
+    .colorBorde {
+        color: map-get($paletaDeColores, primario);
+    }
+}
