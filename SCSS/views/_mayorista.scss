@@ -1,0 +1,47 @@
+.mayorista {
+    @include dFlexDirectionColumn;
+    width: 100%;
+
+    img {
+        width: 80%;
+        border-radius: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__pedido {
+        width: 80%;
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        &__formulario {
+            @include dFlexDirectionColumn;
+            @include enviarFormulario;
+
+            textarea {
+                width: 100%;
+                height: 15rem;
+                font-size: 1.5rem;
+                border: 0.1rem solid map-get($paletaDeColores, primario);
+                border-radius: 1rem;
+                color: map-get($paletaDeColores, primario);
+                background-color: map-get($paletaDeColores, secundario);
+            }
+
+            ::placeholder {
+                color: map-get($paletaDeColores, primario);
+                text-align: center;
+            }
+
+            
+        }
+    }
+}

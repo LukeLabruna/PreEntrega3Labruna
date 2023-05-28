@@ -7,6 +7,7 @@
 body {
   color: rgb(193, 176, 162);
   font-family: "Open sans";
+  background-color: rgb(245, 245, 245);
 }
 body main {
   min-height: 90vh;
@@ -55,6 +56,7 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 .footer__copyright {
   background-color: rgb(193, 176, 162);
@@ -97,25 +99,193 @@ body main {
 }
 
 .procesos {
-  width: 80%;
+  width: 90%;
   margin: 3rem auto;
+  text-align: center;
 }
-
 .procesos img {
   width: 100%;
   border-radius: 2rem;
   aspect-ratio: 1;
 }
-
 .procesos h2 {
   font-size: 3rem;
-  text-align: center;
-  font-weight: bold;
+  margin: 1rem;
+}
+.procesos p {
+  font-size: 1.5rem;
 }
 
-.procesos p {
-  font-size: 2rem;
+.productos {
   text-align: center;
+}
+.productos__titulo {
+  font-size: 3rem;
+  color: rgb(245, 245, 245);
+  text-align: center;
+  background-color: rgb(193, 176, 162);
+  font-weight: lighter;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.productos .row {
+  column-gap: 2rem;
+  margin: 2rem;
+}
+.productos__articulo {
+  box-shadow: 0 0 2rem rgb(193, 176, 162);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+.productos__articulo img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.productos__articulo h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+}
+.productos__articulo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0 0;
+}
+.productos__articulo button {
+  width: 100%;
+  border: none;
+  color: rgb(245, 245, 245);
+  background-color: rgb(193, 176, 162);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+}
+
+.mayorista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.mayorista img {
+  width: 80%;
+  border-radius: 2rem;
+  margin: 1rem 0;
+}
+.mayorista__pedido {
+  width: 80%;
+  text-align: center;
+}
+.mayorista__pedido h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.mayorista__pedido p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.mayorista__pedido__formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mayorista__pedido__formulario input {
+  width: 100%;
+  border: none;
+  color: rgb(245, 245, 245);
+  background-color: rgb(193, 176, 162);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+}
+.mayorista__pedido__formulario input[type=email] {
+  color: rgb(193, 176, 162);
+  background-color: rgb(245, 245, 245);
+  border: 0.1rem solid rgb(193, 176, 162);
+}
+.mayorista__pedido__formulario textarea {
+  width: 100%;
+  height: 15rem;
+  font-size: 1.5rem;
+  border: 0.1rem solid rgb(193, 176, 162);
+  border-radius: 1rem;
+  color: rgb(193, 176, 162);
+  background-color: rgb(245, 245, 245);
+}
+.mayorista__pedido__formulario ::placeholder {
+  color: rgb(193, 176, 162);
+  text-align: center;
+}
+
+.contacto {
+  margin: 1rem 0;
+}
+.contacto h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.contacto__redes ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+.contacto__redes ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(193, 176, 162);
+  font-size: 2rem;
+}
+.contacto__redes ul a:hover {
+  transform: scale(120%);
+}
+.contacto__formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+.contacto__formulario form textarea {
+  height: 15rem;
+  width: 90%;
+  font-size: 1.5rem;
+  border: 0.1rem solid rgb(193, 176, 162);
+  border-radius: 1rem;
+  color: rgb(193, 176, 162);
+  background-color: rgb(245, 245, 245);
+}
+.contacto__formulario form ::placeholder {
+  color: rgb(193, 176, 162);
+  text-align: center;
+}
+.contacto__formulario form div {
+  width: 90%;
+}
+.contacto__formulario form div input {
+  width: 100%;
+  border: none;
+  color: rgb(245, 245, 245);
+  background-color: rgb(193, 176, 162);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+}
+.contacto__formulario form div input[type=email] {
+  color: rgb(193, 176, 162);
+  background-color: rgb(245, 245, 245);
+  border: 0.1rem solid rgb(193, 176, 162);
 }
 
 /*# sourceMappingURL=styles.css.map */

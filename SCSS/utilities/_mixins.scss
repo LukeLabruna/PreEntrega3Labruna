@@ -3,3 +3,27 @@
     flex-direction: column;
     align-items: center;
 }
+
+@mixin boton {
+    width: 100%;
+    border: none;
+    color: map-get($paletaDeColores, secundario);
+    background-color: map-get($paletaDeColores, primario);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+}
+
+@mixin enviarFormulario {
+    input {
+        @include boton;
+
+        &[type=email] {
+            color: map-get($paletaDeColores, primario);
+            background-color: map-get($paletaDeColores, secundario);
+            border: 0.1rem solid map-get($paletaDeColores, primario);
+            ;
+        }
+    }
+}

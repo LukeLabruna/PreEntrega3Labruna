@@ -1,0 +1,56 @@
+.contacto {
+    margin: 1rem 0;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__redes ul {
+        @include dFlexDirectionColumn;
+        list-style: none;
+        gap: 1rem;
+        margin: 1rem 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: map-get($paletaDeColores, primario);
+            font-size: 2rem;
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+
+    &__formulario {
+        form {
+            @include dFlexDirectionColumn;
+            margin: 1rem;
+            gap: 1rem;
+
+            textarea {
+                height: 15rem;
+                width: 90%;
+                font-size: 1.5rem;
+                border: 0.1rem solid map-get($paletaDeColores, primario);
+                border-radius: 1rem;
+                color: map-get($paletaDeColores, primario);
+                background-color: map-get($paletaDeColores, secundario);
+            }
+
+            ::placeholder {
+                color: map-get($paletaDeColores, primario);
+                text-align: center;
+            }
+
+            div {
+                width: 90%;
+                @include enviarFormulario
+            }
+        }
+    }
+}

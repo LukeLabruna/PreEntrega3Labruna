@@ -1,6 +1,7 @@
 .footer {
     @include dFlexDirectionColumn;
-
+    margin-top: 2rem;
+    
     &__copyright {
         background-color: map-get($paletaDeColores, primario);
         padding: 1rem;
