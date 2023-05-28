@@ -1,4 +1,5 @@
 @import "./utilities/maps";
+@import "./utilities/mixins";
 
 @import "./base/reset";
 @import "./base/body";
@@ -6,3 +7,6 @@
 @import "./layout/navBar";
 @import "./layout/main";
 @import "./layout/footer";
+
+@import "./views/index";
+@import "./views/procesos"
