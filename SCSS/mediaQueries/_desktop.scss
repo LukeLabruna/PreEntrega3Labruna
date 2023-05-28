@@ -1,0 +1,123 @@
+@media only screen and (min-width: 900px) {
+
+    /* index */
+    .presentacion {
+        display: flex;
+        flex-direction: row;
+        column-gap: 4rem;
+        margin: 4rem;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    /* procesos */
+    .container {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .procesos {
+        width: 95%;
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* productos */
+    .productos {
+        .row {
+            column-gap: 2rem;
+        }
+
+        .container {
+            position: relative;
+            gap: 2rem;
+        }
+
+        &__articulo {
+            img {
+                margin-bottom: 1rem;
+            }
+
+            div {
+                display: none;
+
+                h3 {
+                    font-size: 2vw;
+                }
+
+                p {
+                    font-size: 1.5vw;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
+
+            &:hover>div {
+                display: inline-block;
+                position: absolute;
+                top: 4rem;
+                text-shadow: 0 0 2rem #000;
+            }
+
+            &:hover>img {
+                opacity: 0.1;
+            }
+        }
+    }
+
+    /* mayorista */
+    .mayorista {
+        position: relative;
+
+        img {
+            position: absolute;
+            opacity: 0.9;
+            height: 100%;
+            width: 90%;
+        }
+
+        &__pedido {
+            position: relative;
+
+            h2,
+            p {
+                color: map-get($paletaDeColores, secundario);
+                text-shadow: 0 0 0.7rem black;
+            }
+
+            &__formulario {
+                div {
+                    display: flex;
+                    width: 100%;
+                    column-gap: 1rem;
+
+                    input {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* contacto */
+
+    .contacto__formulario {
+        form div {
+            display: flex;
+            width: 90%;
+            column-gap: 1rem;
+        }
+
+        form input {
+            width: 50%;
+
+        }
+    }
+}
