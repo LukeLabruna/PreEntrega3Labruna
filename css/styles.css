@@ -345,17 +345,19 @@ body main {
   .productos__articulo div p {
     font-size: 1.5vw;
   }
-  .productos__articulo div button {
+  .productos__articulo button {
     font-size: 1rem;
   }
   .productos__articulo:hover > div {
-    display: inline-block;
-    position: absolute;
-    top: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-shadow: 0 0 2rem #000;
   }
   .productos__articulo:hover > img {
-    opacity: 0.1;
+    display: none;
   }
   /* mayorista */
   .mayorista {
