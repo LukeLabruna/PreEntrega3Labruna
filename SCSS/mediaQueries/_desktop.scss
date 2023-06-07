@@ -21,6 +21,10 @@
 
     .procesos {
         width: 95%;
+
+        img {
+            width: 50%;
+        }
     }
 
     .row-reverse {
@@ -28,27 +32,71 @@
     }
 
     /* productos */
-    
+    .productos {
+
+        &__articulo {
+
+
+
+            h3 {
+                color: map-get($paletaDeColores , secundario);
+                font-size: 3vw;
+            }
+
+            p {
+                color: map-get($paletaDeColores , secundario);
+                font-size: 2vw;
+            }
+        }
+
+
+        .flip-card{
+        
+        &-inner {
+            position: relative;
+            width: 100%;
+            height: 27vw;
+
+            border-radius: 2rem;
+            transition: all 2s;
+            transform-style: preserve-3d;
+        }
+
+        &-front,
+        &-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            backface-visibility: hidden;
+        }
+
+
+        &-back {
+            display: grid;
+            place-items: center;
+            background-color: map-get($paletaDeColores, primario);
+            transform: rotateY(180deg);
+        }
+
+        &:hover .flip-card-inner {
+            transform: rotateY(-180deg);
+        }
+    }
+}
+
+
 
     /* mayorista */
     .mayorista {
-        position: relative;
+        width: 70%;
+        margin: 0 auto;
 
         img {
-            position: absolute;
-            opacity: 0.9;
-            height: 100%;
-            width: 90%;
+            display: none;
         }
 
         &__pedido {
-            position: relative;
-
-            h2,
-            p {
-                color: map-get($paletaDeColores, secundario);
-                text-shadow: 0 0 0.7rem black;
-            }
 
             &__formulario {
                 div {

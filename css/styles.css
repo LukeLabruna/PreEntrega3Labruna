@@ -162,6 +162,7 @@ body main {
   background-color: rgb(193, 176, 162);
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  border-radius: 2rem;
   cursor: pointer;
   margin: 1rem 0 0 0;
 }
@@ -201,6 +202,7 @@ body main {
   background-color: rgb(193, 176, 162);
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  border-radius: 2rem;
   cursor: pointer;
   margin: 1rem 0 0 0;
 }
@@ -279,6 +281,7 @@ body main {
   background-color: rgb(193, 176, 162);
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  border-radius: 2rem;
   cursor: pointer;
   margin: 1rem 0 0 0;
 }
@@ -322,60 +325,52 @@ body main {
   .procesos {
     width: 95%;
   }
+  .procesos img {
+    width: 50%;
+  }
   .row-reverse {
     flex-direction: row-reverse;
   }
   /* productos */
-  .productos .row {
-    column-gap: 2rem;
+  .productos__articulo h3 {
+    color: white;
+    font-size: 3vw;
   }
-  .productos .container {
-    position: relative;
-    gap: 2rem;
-  }
-  .productos__articulo img {
-    margin-bottom: 1rem;
-  }
-  .productos__articulo div {
-    display: none;
-  }
-  .productos__articulo div h3 {
+  .productos__articulo p {
+    color: white;
     font-size: 2vw;
   }
-  .productos__articulo div p {
-    font-size: 1.5vw;
+  .productos .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 27vw;
+    border-radius: 2rem;
+    transition: all 2s;
+    transform-style: preserve-3d;
   }
-  .productos__articulo button {
-    font-size: 1rem;
-  }
-  .productos__articulo:hover > div {
+  .productos .flip-card-front, .productos .flip-card-back {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 2rem #000;
+    border-radius: 2rem;
+    backface-visibility: hidden;
   }
-  .productos__articulo:hover > img {
-    display: none;
+  .productos .flip-card-back {
+    display: grid;
+    place-items: center;
+    background-color: rgb(193, 176, 162);
+    transform: rotateY(180deg);
+  }
+  .productos .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
   }
   /* mayorista */
   .mayorista {
-    position: relative;
+    width: 70%;
+    margin: 0 auto;
   }
   .mayorista img {
-    position: absolute;
-    opacity: 0.9;
-    height: 100%;
-    width: 90%;
-  }
-  .mayorista__pedido {
-    position: relative;
-  }
-  .mayorista__pedido h2,
-  .mayorista__pedido p {
-    color: white;
-    text-shadow: 0 0 0.7rem black;
+    display: none;
   }
   .mayorista__pedido__formulario div {
     display: flex;
